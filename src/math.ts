@@ -2,6 +2,9 @@
 
 
 class MathImpl {
+  public static readonly DegToRad = Math.PI / 180;
+  public static readonly RadToDef = 180 / Math.PI;
+
   /** Clamps a value between a minimum float and maximum float value.  */
   public clamp(value: number, min: number, max: number): number {
     if (value < min) { value = min; }
